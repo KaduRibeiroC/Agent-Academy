@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coach/Gaules</title>
+
+    <link rel="stylesheet" href="Style/header.css">
+    <link rel="stylesheet" href="Style/style.css">
+</head>
+<body>
+    <header>
+        <a href="../../../boas-vindas.html" class="logo">AGENT ACADEMY</a>
+        <ul>
+            <li><a href="../../../boas-vindas.html">Inicio</a></li>
+            <li><a href="#">Sobre Nós</a></li>
+            <li><a href="../Lista.html">Contato</a></li>
+            <li><a href="https://twitter.com/AAAgentAcademy?t=x8hJx0c0fEa7IgaNTUaRBw&s=08">Sociais</a></li>
+        </ul>
+    </header>
+
+    <section>
+        <img src="Img/ediçao-user/sennaFundo.jpg" id="artFundo">
+        <img src="Img/ediçao-user/sennaFrente.png" id="artFrente">
+        <h3 id="titulo">Gaules</h3>
+        <a href="#sec" id="btn">Partidas</a>
+        
+    </section>
+    <ul id="sec" class="sec">
+        <div class="cabeçalho" id="cabeçalho">
+        <div class="detalhes" id="detalhes">
+            <h5>Partidas Recentes</h5>
+            <div class="informacoescoach" id="informacoescoach">Mono toplaner. <span>Top 5 Malphite Brasil.</span></div>
+            <div class="informacoescoach" id="informacoescoach">Atualmente testando e aperfeiçoando a nova personagem Aurora.</div>
+        </div>
+        <img src="Img/Coach-foto/gaules akjsdyhkajhsdkajsh.png" id="Coach">
+        </div>
+        <div id="conteiner" class="conteiner">
+            <div id="partidas" class="partidas">
+                <li>
+                    <img src="Img/roles/toplane.png" id="roles">
+                    <img src="Img/champions/Aurora.webp" id="champion">
+                    <div id="nome">Aurora</div>
+                    <div class="vitlos">Vitoria</div>
+                </li>
+                <li>
+                    <img src="Img/roles/midlane.png" id="roles">
+                    <img src="Img/champions/Aurelion.webp" id="champion">
+                    <div id="nome">Aurelion Sol</div>
+                    <div class="vitlos">Vitoria</div>
+                </li>
+                <li>
+                    <img src="Img/roles/midlane.png" id="roles">
+                    <img src="Img/champions/Aurelion.webp" id="champion">
+                    <div id="nome">Aurelion Sol</div>
+                    <div class="vitlos">Vitoria</div>
+                </li>
+                <li>
+                    <img src="Img/roles/midlane.png" id="roles">
+                    <img src="Img/champions/Yasuo.webp" id="champion">
+                    <div id="nome">Yasuo</div>
+                    <div class="vitlos">Derrota</div>
+                </li>
+                <li>
+                    <img src="Img/roles/jungle.png" id="roles">
+                    <img src="Img/champions/kayn.jpeg" id="champion">
+                    <div id="nome">Kayn</div>
+                    <div class="vitlos">Derrota</div>
+                </li>
+            </div>
+            <div id="conter1" class="conter1">
+                <div id="rank" class="rank">
+                    <div id="tabela">RANK</div>
+                    <img src="Img/ranks/Grandmaster.png" id="ranked">
+                    <div id="nome-rank">Grão-Mestre</div>
+                </div>
+                <div id="champfav" class="champfav">
+                    <div id="favorito">Aurora</div>
+                    <img src="Img/champions/Aurora.webp" id="fav">
+                    <img src="Img/roles/toplane.png" id="fav">
+                    <div id="campfav">Campeão Favorito</div>
+                </div>
+            </div>
+            <div id="conter2" class="conter2">
+                <div id="friends">
+                    <h5 id="amigos">Seguido por :</h5>
+                    <div><img src="Img/perfis/ghostyuna.webp" id="foto"><p id="nome">ghostyuna</p></div>
+                    <div><img src="Img/perfis/quengasafada.webp" id="foto"><p id="nome">quengasafada</p></div>
+                    <a href="perfil2/perfil2.html"><div><img src="Img/perfis/roludinhadopapai.webp" id="foto"><p id="nome">roludinhadopapai</p></div></a>
+                </div>
+            </div>
+        </div>
+    </ul>
+
+        <div class="stats-container">
+        <!-- Card de Combate -->
+        <div class="stat-card" id="combat-card">
+            <h2 id="combat-score">79</h2>
+            <p>Combat</p>
+            <span class="description">Good</span>
+            <div class="progress-bar">
+                <span>Damage / Min.</span>
+                <div class="bar"><div class="progress" id="combat-damage"></div></div>
+            </div>
+            <div class="progress-bar">
+                <span>Kill Participation</span>
+                <div class="bar"><div class="progress" id="combat-kill"></div></div>
+            </div>
+            <div class="progress-bar">
+                <span>CC Score / Min.</span>
+                <div class="bar"><div class="progress" id="combat-cc"></div></div>
+            </div>
+        </div>
+        
+        <!-- Card de Farming -->
+        <div class="stat-card" id="farming-card">
+            <h2 id="farming-score">71</h2>
+            <p>Farming</p>
+            <span class="description">Good</span>
+            <div class="progress-bar">
+                <span>Gold Spent / Min.</span>
+                <div class="bar"><div class="progress" id="farming-gold"></div></div>
+            </div>
+            <div class="progress-bar">
+                <span>CS / Min.</span>
+                <div class="bar"><div class="progress" id="farming-cs"></div></div>
+            </div>
+            <div class="progress-bar">
+                <span>XP / Min.</span>
+                <div class="bar"><div class="progress" id="farming-xp"></div></div>
+            </div>
+        </div>
+
+        <!-- Card de Visão -->
+        <div class="stat-card" id="vision-card">
+            <h2 id="vision-score">55</h2>
+            <p>Vision</p>
+            <span class="description">Good</span>
+            <div class="progress-bar">
+                <span>Vision Score / Min.</span>
+                <div class="bar"><div class="progress" id="vision-score-per-minute"></div></div>
+            </div>
+            <div class="progress-bar">
+                <span>Wards Placed</span>
+                <div class="bar"><div class="progress" id="vision-wards"></div></div>
+            </div>
+            <div class="progress-bar">
+                <span>Wards Destroyed</span>
+                <div class="bar"><div class="progress" id="vision-wards-destroyed"></div></div>
+            </div>
+        </div>
+    </div>
+    <script src="scrypt/scrypt.js"></script>
+</body>
+</html>

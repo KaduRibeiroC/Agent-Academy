@@ -1,0 +1,410 @@
+@font-face{
+    font-family: 'Tungsten';
+    src: url(../../../fontes/Valorant-Tungsten-Bold.ttf) format(truetype);
+}
+@font-face {
+    font-family: 'Spiegel-Bold';
+    src: url(../../../fontes/Spiegel_TT_Bold.ttf) format(truetype), url(../../../fontes/Spiegel-Bold.otf) format(opentype);
+}
+@font-face {
+    font-family: 'Spiegel-Regular';
+    src: url(../../../fontes/Spiegel-Regular.otf) format(opentype), url(../../../fontes/Spiegel_TT_Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tungsten';
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+    height: 2000px;
+    overflow-x: hidden;
+    background:#0d0618;
+}
+section #infocima{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+#capafundo{
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content: center;
+    gap: 15%;
+    height: 780px;
+}
+#gradient{
+    position: relative;
+    transform: translateY(129px);
+    height: 130px;
+    background: linear-gradient(to right, #222b56, #0e1224);
+    background-size: 200% 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+#leaguenews{
+    z-index: 7;
+    color: #b4b4b4;
+    text-shadow: 0 0 7px #202020;
+    white-space: nowrap;
+    font-size: 2.9vw;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+}
+#leaguenews img{
+    width: 20px;
+}
+#leaguenews span{
+    font-size: 1.3vw;
+}
+.leaguenews #iconeInc img{
+    width: 20px;
+}
+#leaderboards{
+    z-index: 7;
+    display: flex;
+    flex-direction:row-reverse;
+    align-items:center;
+    justify-content: center;
+    gap: 30px;
+}
+.bstperfil{
+    position: relative;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction:column-reverse;
+    background-color: #2d233d;
+    width: 160px;
+    height: 188px;
+    border-radius: 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.815);
+}
+.bstperfil #placartop{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #6771ff70;
+    color: #000;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.bstperfil #iconetop img{
+    position: relative;
+    margin: 0 auto 10px;
+    display: block;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+.bstperfil #nometop{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    display: block;
+}
+.leaderboards #linkbstperfil{
+    font-size: 1.3vw;
+    color: #cfcfcf;
+    text-decoration: none;
+}
+#speeddial{
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content: center;
+    gap: 10%;
+    padding: 25px;
+}
+#novidadetexto{
+    transform: translatex(55px);
+    color: #dddddd;
+    font-size: 1.2vw;
+}
+.speeddial #atualizacoesimagem{
+    display: flex;
+    flex-direction:row;
+}
+.noticias #linknoticia{
+    display: flex;
+    flex-direction:row;
+    gap: 2.5%;
+    padding: 13.5px;
+    text-decoration: none;
+    color: #808080;
+    letter-spacing: 0.5px;
+    font-size: 0.8vw;
+}
+.linknoticia img{
+    position: relative;
+    width: 130px;
+    height: 70px;
+}
+.linknoticia #noticiatexto{
+    width: 200px;
+}
+#informacoesisoladas{
+    display: flex;
+    flex-direction:row;
+    transform: translate(130px, 170px);
+    gap: 5%;
+}
+.insights-card{
+    width: 380px;
+    height: 510px;
+    background-color: #0b4d6a;
+    padding: 20px;
+    border-radius: 18px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-image: url('../Img/atualizações/aurora splash art usual.jpg');/*Caso queira trocar de imagem é aqui*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+.insights-card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #222b56, #222b562f);
+    z-index: 1;
+}
+.insights-header,
+.champion-list,
+.view-all-btn{
+    position: relative;
+    z-index: 2;
+}
+.insights-header h3{
+    font-size: 2.2vw;
+    margin-bottom: 5px;
+}
+.insights-header p{
+    font-size: 1.3vw;
+    color: #858542;
+    line-height: 1.5;
+}
+.champion-list{
+    margin-top: 15px;
+}
+.champion-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.champion-item img{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+.champion-info{
+    flex: 1;
+    margin-left: 10px;
+    text-align: left;
+}
+.champion-role{
+    font-size: 1.0vw;
+    color: #858542;
+}
+.champion-name{
+    font-size: 1.2vw;
+    margin-top: 2.5px;
+}
+.champion-stats{
+    text-align: right;
+}
+.champion-stats div{
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+.champion-stats span{
+    color: #ffffff;
+}
+.view-all-btn{
+    width: 100%;
+    padding: 10px;
+    background-color: #364383;
+    font-size: 2.2vw;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+    transform: translateY(-30px);
+}
+.view-all-btn:hover{
+    background-color: #131830;
+}
+.premiumAnounce{
+    width: 380px;
+    height: 510px;
+    background-color: #0b4d6a;
+    padding: 20px;
+    border-radius: 18px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-image: url('../Img/atualizações/xayah\ star\ guardian\ ruby\ usual.jpg');/*Caso queira trocar de imagem é aqui*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+.premiumAnounce::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #222b56, #222b562f);
+    z-index: 1;
+}
+.insights-header,
+.motivosPremium,
+.viewallbtn2{
+    position: relative;
+    z-index: 2;
+}
+.motivosPremium{
+    margin-top: 15px;
+}
+.motivoinfo{
+    flex: 1;
+    margin-left: 10px;
+    text-align: left;
+}
+.motivos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.motivos img{
+    position: relative;
+    width: 37px;
+    height: 37px;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+.premiumtitulo{
+    font-size: 1.0vw;
+    color: #858542;
+}
+.premiumsub{
+    font-size: 1.2vw;
+    margin-top: 2.5px;
+}
+#viewallbtn2{
+    width: 100%;
+    padding: 10px;
+    background-color: #364383;
+    font-size: 2.2vw;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+}
+#viewallbtn2:hover{
+    background-color: #131830;
+}
+.atualizacoestempo{
+    width: 380px;
+    height: 510px;
+    background-color: #0b4d6a;
+    padding: 20px;
+    border-radius: 18px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-image: url('../Img/atualizações/star\ nemesis\ morgana\ splash.jpg');/*Caso queira trocar de imagem é aqui*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+.atualizacoestempo::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #222b56, #222b562f);
+    z-index: 1;
+}
+.championselect{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.championselect{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.championselect img{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+.championnerf, .championbuff{
+    margin-bottom: 5.5px;
+    padding-bottom: 5.5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.textobuff, .textonerf{
+    font-size: 1.8vw;
+    color: white;
+    
+}
+.insights-header,
+.championselect,
+.view-all-btn{
+    position: relative;
+    z-index: 2;
+}

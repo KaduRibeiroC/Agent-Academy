@@ -1,0 +1,220 @@
+@font-face{
+    font-family: 'Tungsten';
+    src: url(../../../../../fontes/Valorant-Tungsten-Bold.ttf) format(truetype);
+}
+@font-face {
+    font-family: 'Spiegel-Bold';
+    src: url(../../../../../fontes/Spiegel_TT_Bold.ttf) format(truetype), url(../../../../../fontes/Spiegel-Bold.otf) format(opentype);
+}
+@font-face {
+    font-family: 'Spiegel-Regular';
+    src: url(../../../../../fontes/Spiegel-Regular.otf) format(opentype), url(../../../../../fontes/Spiegel_TT_Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tungsten';
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+    height: 2700px;
+    overflow-x: hidden;
+    background:#0d0618;
+    background: linear-gradient(to bottom, #354285, #0d0618)
+}
+section #infocima{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+#capafundo{
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content: center;
+    gap: 15%;
+    height: 780px;
+}
+#capafundo::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #222b56, #222b5600);
+    z-index: 1;
+}
+#leaguenews{
+    z-index: 7;
+    color: #b4b4b4;
+    text-shadow: 0 0 7px #202020;
+    white-space: nowrap;
+    font-size: 2.9vw;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+}
+.atualizacoesRiot{
+    display: flex;
+    justify-content: center;
+}
+#informacoesisoladas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateY(80px);
+    gap: 50px;
+}
+.premiumAnounce{
+    width: 990px;
+    height: 510px;
+    background-color: #0b4d6a;
+    padding: 20px;
+    border-radius: 18px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-image: url('../../../Img/atualizações/battle-bat-xayah-skin-splash-art-lol-hd-wallpaper-uhdpaper.com-232@3@b.jpg');/*Caso queira trocar de imagem é aqui*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+.premiumAnounce::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #222b56, #222b562f);
+    z-index: 1;
+}
+.insights-header h3{
+    font-size: 2.7vw;
+    margin-bottom: 5px;
+}
+.insights-header p{
+    font-size: 1.3vw;
+    color: #858542;
+    line-height: 1.5;
+}
+.insights-header,
+.motivosPremium,
+.viewallbtn2{
+    position: relative;
+    z-index: 2;
+}
+.motivosPremium{
+    margin-top: 15px;
+}
+.motivoinfo{
+    flex: 1;
+    margin-left: 10px;
+    text-align: left;
+}
+.motivos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.motivos img{
+    position: relative;
+    width: 37px;
+    height: 37px;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+.premiumtitulo{
+    font-size: 2.0vw;
+    color: #858542;
+}
+.premiumsub{
+    font-size: 1.5vw;
+    margin-top: 2.5px;
+}
+#viewallbtn2{
+    width: 100%;
+    padding: 10px;
+    background-color: #364383;
+    font-size: 2.2vw;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+}
+#viewallbtn2:hover{
+    background-color: #131830;
+}
+.premiumAnounce2{
+    width: 990px;
+    height: 510px;
+    background-color: #0b4d6a;
+    padding: 20px;
+    border-radius: 18px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-image: url('../../../Img/atualizações/xayah\ rakan\ lol.jpg');/*Caso queira trocar de imagem é aqui*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+.premiumAnounce2::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #222b56, #222b566b);
+    z-index: 1;
+}
+.premiumAnounce3{
+    width: 990px;
+    height: 510px;
+    background-color: #0b4d6a;
+    padding: 20px;
+    border-radius: 18px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-image: url('../../../Img/atualizações/broken\ covenant\ xayah\ rakan.jpg');/*Caso queira trocar de imagem é aqui*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+.premiumAnounce3::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #222b56, #222b566b);
+    z-index: 1;
+}

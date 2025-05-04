@@ -1,0 +1,73 @@
+@font-face{
+    font-family: 'Tungsten';
+    src: url(../../../../../fontes/Valorant-Tungsten-Bold.ttf) format(truetype);
+}
+@font-face {
+    font-family: 'Spiegel-Bold';
+    src: url(../../../../../fontes/Spiegel_TT_Bold.ttf) format(truetype), url(../../../../../fontes/Spiegel-Bold.otf) format(opentype);
+}
+@font-face {
+    font-family: 'Spiegel-Regular';
+    src: url(../../../../../fontes/Spiegel-Regular.otf) format(opentype), url(../../../../../fontes/Spiegel_TT_Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tungsten';
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+    height: 2000px;
+    overflow-x: hidden;
+    background:#0d0618;
+    background: linear-gradient(to bottom, #354285, #0d0618)
+}
+section #infocima{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+#capafundo{
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content: center;
+    gap: 15%;
+    height: 780px;
+}
+#capafundo::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #222b56, #222b5600);
+    z-index: 1;
+}
+#leaguenews{
+    z-index: 7;
+    color: #b4b4b4;
+    text-shadow: 0 0 7px #202020;
+    white-space: nowrap;
+    font-size: 2.9vw;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+}
